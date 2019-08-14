@@ -1,20 +1,25 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    var person1Input = $("input#person1").val();
-    var person2Input = $("input#person2").val();
-    var animalInput= $("input#animal").val();
-    var exclamationInput = $("input#exclamation").val();
-    var verbInput = $("input#verb").val();
-    var nounInput = $("input#noun").val();
+    var firstNameInput = $("input#firstName").val();
+    var lastNameInput = $("input#lastName").val();
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".verb").text(verbInput);
-    $(".noun").text(nounInput);
+    // var animalInput= $("input#animal").val();
+    // var exclamationInput = $("input#exclamation").val();
+    // var verbInput = $("input#verb").val();
+    // var nounInput = $("input#noun").val();
 
-    $("#story").show();
+    $(".firstName").text(firstNameInput);
+    $(".lastName").text(lastNameInput);
+
+
+    // $(".animal").text(animalInput);
+    // $(".exclamation").text(exclamationInput);
+    // $(".verb").text(verbInput);
+    // $(".noun").text(nounInput);
+
+
+$(".firstName").show();
+    // $("#postcard").show();
 
     event.preventDefault();
   });
