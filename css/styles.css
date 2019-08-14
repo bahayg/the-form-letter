@@ -1,7 +1,9 @@
-/* .form-inline{
+#letter {
   display: none;
-} */
-
-#postcard {
-  display: none;
+}
+#letter {
+  width: 700px;
+  border: 5px solid blue;
+  padding: 50px;
+  margin: 20px;
 }

@@ -1,71 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" dir="ltr">
   <head>
+    <meta charset="utf-8">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.4.1.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Postcard</title>
+    <title>The Form Letter</title>
   </head>
+
   <body>
     <div class="container">
-      <h1>Postcard</h1>
-<!--from Bootsrap F/Lname-->
-      <form class="form-inline ">
-        <label class="sr-only firstName" for="inlineFormInputName2">First Name</label>
-        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="First Name">
+      <h1>The Form Letter</h1>
+          <div>
+            <form id="formOne">
+              <div class="form-group">
+                <label for="person">Name</label>
+                <input id="person" class="form-control" type="text">
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <input id="address" class="form-control" type="text">
+              </div>
 
-        <label class="sr-only lastName" for="inlineFormInputName2">Last Name</label>
-        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Last Name">
-      </form>
-<!--from Bootsrap Address-->
-      <form>
-        <div class="form-row">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
+              <button type="submit" class="btn">Letter!</button>
+            </form>
           </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
+          <div id="letter">
+            <h1>Letter!</h1>
+            <p>To: <span class="person"></span></p>
+            <p>Address: <span class="address"></span></p>
+            <p>Duis non sem interdum, accumsan lacus consectetur, posuere ligula. Maecenas venenatis nisl quis augue fermentum accumsan. Nunc nec faucibus augue, a consectetur libero. Sed consequat ante eget eleifend porta. Nam cursus leo auctor felis pulvinar, a cursus justo scelerisque. Vivamus erat sem, varius in bibendum et, volutpat eu ante. Nunc mollis magna magna, ut vulputate dui posuere a.</p>
           </div>
         </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </form>
-
-
-
-      <div id="postcard">
-        <h1>Postcard</h1>
-        <p>
-          One day, <span class="person1"></span> and <span class="person2"></span> were walking through the woods, when suddenly a giant <span class="animal"></span> appeared. "<span class="exclamation"></span>", <span class="person1"></span> cried. The two of them <span class="verb"></span> as quickly possible, and when they were safe, <span class="person1"></span> and <span class="person2"></span> gave each other a giant <span class="noun"></span>.
-        </p>
-      </div>
-    </div>
-  </body>
-</html>
+      </body>
+    </html>

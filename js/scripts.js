@@ -1,26 +1,15 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    var firstNameInput = $("input#firstName").val();
-    var lastNameInput = $("input#lastName").val();
-
-    // var animalInput= $("input#animal").val();
-    // var exclamationInput = $("input#exclamation").val();
-    // var verbInput = $("input#verb").val();
-    // var nounInput = $("input#noun").val();
-
-    $(".firstName").text(firstNameInput);
-    $(".lastName").text(lastNameInput);
+    var personInput = $("input#person").val();
+    var addressInput = $("input#address").val();
 
 
-    // $(".animal").text(animalInput);
-    // $(".exclamation").text(exclamationInput);
-    // $(".verb").text(verbInput);
-    // $(".noun").text(nounInput);
+    $(".person").text(personInput);
+    $(".address").text(addressInput);
 
-
-$(".firstName").show();
-    // $("#postcard").show();
+    $("#letter").show();
 
     event.preventDefault();
+
   });
 });
